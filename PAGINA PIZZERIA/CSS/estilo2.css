@@ -1,0 +1,152 @@
+@import url();
+
+body{
+    background-image: url(../IMAGENESPIZZERIA/fondo2.jpg);
+    background-size: 100vw 100vh; /*se declara en ancho y el largo del formulario*/
+    background-attachment: fixed; /* no se mueve de su lugar*/
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.menu {
+  width: 98%;
+  background: brown;
+  position: fixed;
+  z-index: 100;
+}
+
+nav li ul{ /* desaparecen todos los submenu*/
+  display: none;
+  position: absolute; /* hace que los submenu no se deformen cuando se abren*/ 
+  min-width: 140px;
+}
+
+nav li:hover > ul{ /* aparecen cuando se pasa el mouse*/
+  display: block;
+  background: brown;
+}
+
+nav {
+  float:left; /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+
+nav ul li {
+  float: left;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #f74949;
+}
+
+.contenido {
+  padding-top: 80px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+
+/*--------------------------------------------*/
+.formulario{
+  margin-top: 0%;
+}
+
+form{
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 30px; /* relleno del formulario*/
+  box-sizing: border-box; /*hace que el relleno sea hacia dentro*/
+  border-radius: 7px;
+    
+}    
+
+h2{
+  color: white;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 20px; /* se separan*/
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  margin-top: 50px;
+    
+    
+}
+
+textarea{
+  min-height: 100px; /* alto minimo*/
+  max-height: 200px; /* alto maximo*/
+  max-width: 100%;
+}
+
+#boton{
+  background: #31384a;
+  color: white;
+  padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+.pie-pagina{
+  color: white;
+  width: 100%;
+  margin-left: 0%;
+  background-color: #0a141d;
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 5%;
+  
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 90px;
+  /*padding: 0px 0px;*/
+  background-size: cover;
+  
+}
+
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* centrar horizonal*/
+  align-items: center;
+  
+  
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
