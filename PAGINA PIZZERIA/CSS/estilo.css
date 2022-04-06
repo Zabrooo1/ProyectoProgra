@@ -1,0 +1,228 @@
+@import url();
+
+
+body{
+  margin: 0px; /* se pega abajo y a los lados*/
+  padding: 0px;
+  background-image:url(../IMAGENESPIZZERIA/fondo2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+  
+
+
+/* ------------------ BARRA NAVEGACIÓN ---------------------*/
+/*Agregamos margenes inferiores a los parrafos*/
+p {
+  margin-bottom: 20px;
+}
+
+.menu {
+  width: 98%;
+  background: brown;
+  position: fixed;
+  z-index: 100;
+}
+
+nav li ul{ /* desaparecen todos los submenu*/
+  display: none;
+  position: absolute; /* hace que los submenu no se deformen cuando se abren*/ 
+  min-width: 140px;
+}
+
+nav li:hover > ul{ /* aparecen cuando se pasa el mouse*/
+  display: block;
+  background: brown;
+}
+
+nav {
+  float:left; /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+
+nav ul li {
+  float: left;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background: #f74949;
+}
+
+.contenido {
+  padding-top: 80px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+
+/*------------------------IMAGENES EN CASCADA--------------------------*/
+
+
+.slider{
+  width: 95%;
+  margin: auto;
+  overflow: hidden; /* no se ven los elementos que estan fuera de las fotos*/
+}
+
+.slider ul{
+  display: flex; /* se colocan las imagenes una al lado de otra*/
+  padding: 0;
+  width: 400%; /* se sube a medida que haya mas fotos*/ 
+
+  animation: cambio 20s infinite alternate;
+  
+}
+
+.slider li{
+  width: 100%;
+  list-style:none ;
+}
+
+.slider img{
+  width: 100%;
+}
+
+@keyframes cambio{ /* aca se pueden variar los tiempos que dure cada imagen*/
+  0% {margin-left:0%}
+  20% {margin-left: 0%;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  55%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+
+
+/*---------------------------------------------------------*/
+
+.parrafo{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: brown;
+  font-size: 200%;
+  color: white;
+  margin-top: 2%;
+}
+
+.carta{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: brown;
+  font-size: 300%;
+  color: white;
+  margin-top: 5%;
+  margin-left: -5%;
+  width: 100%;
+
+}
+
+.pie-pagina{
+  color: white;
+  width: 100%;
+  margin-left: 0%;
+  background-color: #0a141d;
+  background-size: cover;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 90px;
+  /*padding: 0px 0px;*/
+  background-size: cover;
+  
+}
+
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* centrar horizonal*/
+  align-items: center;
+  
+  
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+
+
+/*-----------------------GALERIA------------------------*/
+div.galeria{
+  margin: 10px 20px;
+  box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 white; /* efecto sombra*/
+  float: left;
+  width: 350px;
+  
+}
+
+div.galeria img{ 
+  width: 100%;
+  height: auto;
+  
+}
+
+div.galeria:hover{
+  border: 1px solid lightcoral;
+  transform: rotate(-3deg);/*mover, rotar y zesgar elementos*/
+
+}
+
+div.texto{
+  text-align: center;
+  text-shadow: 2px 2px 5px white;
+  padding: 10px;
+  background-color: rgb(226, 71, 71);
+}
+
+
+.fotos{
+  width: 100%;
+
+}
+
+.video{
+  text-align: center;
+}
+
+.content-fluid{
+  padding: 0px;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
