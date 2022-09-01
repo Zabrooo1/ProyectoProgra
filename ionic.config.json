@@ -1,0 +1,7 @@
+{
+  "name": "Foik",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
